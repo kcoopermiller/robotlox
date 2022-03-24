@@ -20,7 +20,7 @@ Download the [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azu
 
 VSCode:
 
-1. In VSCode, run the `Remote-Container: Open Folder in Container` command.
+1. Run the `Remote-Container: Open Folder in Container` command
 2. Open the folder that contains this Git repo
 3. For the container configuration, choose `From 'Dockerfile'`
 
@@ -41,4 +41,14 @@ Check out Rojo's [documentation](https://rojo.space/docs/v6/getting-started/inst
 
 ## Live-Syncing into Roblox Studio​
 
-todo
+VSCode:
+
+1. Run the `Rojo: Start server with project file...` command
+2. Open Roblox Studio and press the Rojo toolbar button
+3. Connect
+
+CLI:
+
+1. Run the `rojo serve` command
+2. Open Roblox Studio and press the Rojo toolbar button
+3. Connect
