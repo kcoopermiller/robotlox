@@ -1,0 +1,38 @@
+{
+  "name": "robotlox",
+  "version": "1.0.0",
+  "description": "open-ended learning in Roblox",
+  "main": "src/index.jsx",
+  "scripts": {
+    "dev": "webpack server",
+    "build:wasm": "cargo build --target wasm32-unknown-unknown",
+    "build:bindgen": "wasm-bindgen target/wasm32-unknown-unknown/debug/robotlox.wasm --out-dir build",
+    "build": "npm run build:wasm && npm run build:bindgen && npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcoopermiller/robotlox.git"
+  },
+  "keywords": [],
+  "author": "Cooper Miller <kcoopermiller9@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kcoopermiller/robotlox/issues"
+  },
+  "homepage": "https://github.com/kcoopermiller/robotlox#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@wasm-tool/wasm-pack-plugin": "^1.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

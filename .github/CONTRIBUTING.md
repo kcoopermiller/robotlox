@@ -33,13 +33,15 @@ CLI:
 
 ## [Rojo](https://rojo.space/)
 
+### Installation
+
 VSCode:
 Install the [Rojo](https://marketplace.visualstudio.com/items?itemName=evaera.vscode-rojo) VSCode Extension
 
 CLI:
 Check out Rojo's [documentation](https://rojo.space/docs/v6/getting-started/installation/)
 
-## Live-Syncing into Roblox Studio​
+### Live-Syncing into Roblox Studio​
 
 VSCode:
 
@@ -52,3 +54,7 @@ CLI:
 1. Run the `rojo serve` command
 2. Open Roblox Studio and press the Rojo toolbar button
 3. Connect
+
+# Getting Started with Website Development
+
+# Getting Started with ML Development
