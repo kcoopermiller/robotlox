@@ -6,11 +6,6 @@ extern "C" {
 }
 
 #[wasm_bindgen]
-pub fn big_computation() {
-    alert("Big computation in Rust");
-}
-
-#[wasm_bindgen]
-pub fn welcome(name: &str) {
-    alert(&format!("Hello {}, from Rust!", name));
+pub fn welcome() {
+    alert(&format!("Hello from Rust!"));
 }
