@@ -1,8 +1,10 @@
 # Getting Started
 
-## Virtual Environment
+## Docker
 
-### Installing Docker
+**skip for now** the dockerfile is not setup yet
+
+### Installation
 
 For Windows & MacOS:
 
@@ -56,5 +58,8 @@ CLI:
 3. Connect
 
 # Getting Started with Website Development
+
+1. `npm run build` to build to Rust application and generate the Wasm code
+2. `npm run dev` to open the webpage
 
 # Getting Started with ML Development
