@@ -63,3 +63,29 @@ CLI:
 2. `npm run dev` to open the webpage
 
 # Getting Started with ML Development
+
+NOTE: This set-up should be done on a HPC system, not your laptop.
+Original model was trained on a system with the following specs:
+
+```
+SGI UV300 360 core (720 Threads) 10TB RAM 20TB NVME 150TB disk
+20 x Intel(R) Xeon(R) CPU E7-8867 v4
+```
+
+## Set-up
+
+- Install [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
+- Setup running Docker as a [non-root user](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
+
+## Running the Model
+
+Run the model using the Dockerfile
+
+1. Build the Docker image
+   `docker build -f docker/Dockerfile -t robotlox .`
+
+2. Ensure that your output directory has sufficient permissions
+   `chmod 770 /tmp/robotlox`
+
+3. Run `run_model.rs` along with a starting world environment
+   `cargo run docker/run_model.rs [robolox world]`
